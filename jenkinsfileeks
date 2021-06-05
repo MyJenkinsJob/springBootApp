@@ -1,6 +1,6 @@
 node{
      
-     def mavenHome =  tool name: "myMaven3.8.1", type: "maven"
+     def mavenHome =  tool name: "myMaven", type: "maven"
      
     stage('SCM Checkout'){
         git credentialsId: 'GIT_CREDENTIALS', url:  'https://github.com/MyJenkinsJob/springBootApp.git',branch: 'master'
